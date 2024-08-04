@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.employee.entity.EmployeeEntity;
 
 @Data
 @Builder
@@ -12,5 +13,8 @@ import lombok.NoArgsConstructor;
 public class Employee {
     int id;
     String name;
-    String department;
+
+    public EmployeeEntity toEntity() {
+        return EmployeeEntity.builder().id(Long.valueOf(id)).name(name).build();
+    }
 }
