@@ -1,0 +1,2 @@
+INSERT INTO T_EMPLOYEE (name) VALUES ('Jane Doe');
+INSERT INTO T_EMPLOYEE (name) VALUES ('John Snow');

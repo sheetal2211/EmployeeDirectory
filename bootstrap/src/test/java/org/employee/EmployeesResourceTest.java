@@ -54,10 +54,10 @@ public class EmployeesResourceTest  {
     }
 
     private Employee getEmployee() {
-        return Employee.builder().name("Jane Doe").build();
+        return Employee.builder().name("Emp 1").build();
     }
 
     private EmployeeEntity getEmployeeEntityMock() {
-        return EmployeeEntity.builder().id(Long.valueOf(1)).name("Jane Doe").build();
+        return EmployeeEntity.builder().id(Long.valueOf(3)).name("Emp 1").build();
     }
 }
