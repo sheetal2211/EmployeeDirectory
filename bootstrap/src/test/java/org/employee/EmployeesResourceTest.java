@@ -35,7 +35,7 @@ public class EmployeesResourceTest  {
         ResponseEntity<Employee> response = template.postForEntity(url, getEmployeeEntityMock(), Employee.class);
 
         //Then
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
         assertThat(response.getBody()).isNotNull().usingRecursiveAssertion().ignoringFields("id").isEqualTo(getEmployee());
     }
 
