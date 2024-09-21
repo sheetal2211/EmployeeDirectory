@@ -25,4 +25,8 @@ public class EmployeeService {
         EmployeeEntity employeeEntity = employeeRepository.save(employee);
         return employeeEntity.toModel();
     }
+
+    public void deleteEmployee(Long id) {
+        employeeRepository.deleteById(id);
+    }
 }
