@@ -17,7 +17,7 @@ FROM openjdk:21-jdk
 WORKDIR /app
 
 # Copy the built artifact from the Maven build stage
-COPY --from=build /bootstrap/target/*.jar employee-directory.jar
+COPY --from=build /app/target/*.jar employee-directory.jar
 
 # Expose the application port (change if necessary)
 EXPOSE 8080
