@@ -1,6 +1,8 @@
 # Use an official OpenJDK runtime as a base image for running the app
 FROM openjdk:21-jdk
 
+WORKDIR /app
+
 COPY ./app/target/employee-directory.jar .
 
 # Expose the application port (change if necessary)
